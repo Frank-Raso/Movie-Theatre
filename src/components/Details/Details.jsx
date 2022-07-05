@@ -37,10 +37,7 @@ function Details() {
                     {eachMovie.map((movie, i) => (
                         <p key={i}>{movie.name}</p>
                     ))}</div>}
-
-
         </div>
     );
 }
-
 export default Details;
