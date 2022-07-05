@@ -27,7 +27,7 @@ function* fetchAllMovies() {
     } catch {
         console.log('get all error');
     }
-        
+
 }
 
 function* getMovies(action) {
@@ -35,17 +35,17 @@ function* getMovies(action) {
     try {
         const response = yield axios.get(`api/movie/details/${action.payload}`);
         console.log('getMovies:', response.data);
-        yield put({type: 'EACH_MOVIE', payload: response.data});
+        yield put({ type: 'EACH_MOVIE', payload: response.data });
     } catch {
         console.log('err cannot get movies');
     }
-}  
+}
 
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
-const eachMovie = (state = [], action) => { 
-    if(action.type === 'EACH_MOVIE') {
+const eachMovie = (state = [], action) => {
+    if (action.type === 'EACH_MOVIE') {
         return action.payload;
     } else {
         return state;
@@ -89,7 +89,7 @@ sagaMiddleware.run(rootSaga);
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={storeInstance}>
-        <App />
+            <App />
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
