@@ -40,7 +40,6 @@ function MovieList() {
             </section>
 
         </main>
-
     );
 }
 export default MovieList;
