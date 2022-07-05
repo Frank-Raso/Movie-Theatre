@@ -29,10 +29,10 @@ function MovieList() {
 
                 {movies.map(movie => {
                     return (
-                        <div  key={movie.id} >
+                        <div key={movie.id} >
                             <div className='catalog'>
                                 <h3 className='catalogTitle' >{movie.title}</h3>
-                                <img onClick={() => details(movie.id)} src={movie.poster} alt={movie.title}  />
+                                <img onClick={() => details(movie.id)} src={movie.poster} alt={movie.title} />
                             </div>
                         </div>
                     );
@@ -43,5 +43,4 @@ function MovieList() {
 
     );
 }
-
 export default MovieList;

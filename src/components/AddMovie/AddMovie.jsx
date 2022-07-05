@@ -16,9 +16,7 @@ function MovieList() {
         <div>
             <h1>AddMovie Page:</h1>
             <Button variant="contained" color="primary" onClick={back}>Back To Movies</Button>
-
         </div>
     );
 }
-
 export default MovieList;
