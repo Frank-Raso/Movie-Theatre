@@ -1,4 +1,28 @@
 .movies {
-    display : flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* .catalog {
+
+    background-color: #ffffff1c;
+    backdrop-filter: blur(12px);
+    width: 280px;
+    height: fit-content;
+    margin: auto;
+    border-radius: 15px;
+
+} 
+
+ .catalogTitle {
+    padding-top: 15px;
+
+}
+
+.catalog:hover {
+    background-color: #ffffff38;
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: all .7s ease;
+} */
