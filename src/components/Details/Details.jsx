@@ -23,7 +23,7 @@ function Details() {
     return (
         <div className='detail_page' >
 
-
+            {/* {0 === 0 ? */}
             {eachMovie.length === 0 ?
                 <h1 className='spinner'></h1> :
 

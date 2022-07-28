@@ -4,6 +4,9 @@ img {
     cursor: pointer;
     height: 300px;
     width: 204px;
+    filter: drop-shadow(0px 0px 20px rgb(145, 143, 143));
+
+
 }
 
 img:hover {
