@@ -24,6 +24,7 @@ function Details() {
         <div className='detail_page' >
 
             {/* {0 === 0 ? */}
+            {/* ^for designing purposes */}
             {eachMovie.length === 0 ?
                 <h1 className='spinner'></h1> :
 

@@ -50,15 +50,15 @@ VALUES
 -- starter genres
 INSERT INTO "genres" ("name")
 VALUES 
-('Adventure'),
-('Animated'),
-('Biographical'),
-('Comedy'),
-('Disaster'),
-('Drama'),
-('Epic'),
-('Fantasy'),
-('Musical'),
+('Adventure'),        --1
+('Animated'),         --2
+('Biographical'),     --3
+('Comedy'),           --4
+('Disaster'),         --5
+('Drama'),            --6
+('Epic'),             --7
+('Fantasy'),          --8
+('Musical'),          --9
 ('Romantic'),         --10
 ('Science Fiction'),  --11
 ('Space-Opera'),      --12
@@ -68,19 +68,19 @@ VALUES
 -- starter movies and genres data
 INSERT INTO "movies_genres" ("movie_id", "genre_id")
 VALUES 
-(1,1), (1,3), (1,4),      -- Avatar
-(2,1), (2,11), (2,12),    -- Beauty
-(3,3),                    -- Cpt Marvel
-(4,4), (4,7),             -- Nemo
+(1,1), (1,2), (1,6),      -- Avatar
+(2,1), (2,9), (2,8),      -- Beauty
+(3,13),                   -- Cpt Marvel
+(4,1), (4,2),             -- Nemo
 (5,3),                    -- Gone Girl
 (6,12),                   -- Véronique
-(7,9),(7,2),              -- Bond
-(8,4),                    -- Pi
-(9,4),                    -- Monsters
-(10,4),                   -- Star Wars
+(7,1),(7,6),              -- Bond
+(8,5),(8,6),(8,7),         -- Pi
+(9,1),(9,4),              -- Monsters
+(10,1),(10,6),(10,7),(10,11), -- Star Wars
 (11,6), (11,11),          -- Martian
-(12,8), (12,9),           -- Social Net
-(13,4), (13,10), (13,6),  -- Titanic
-(14,3), (14,2), (14,4),   -- Toy Story
+(12,3),                   -- Social Net
+(13,1),(13,5),(13,6),(13,10),  -- Titanic
+(14,1), (14,2), (14,4),   -- Toy Story
 (15,6), (15,1),           -- Pulp Fiction
 (16,6), (16,1);           -- Reservoir Dogs
