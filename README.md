@@ -4,5 +4,3 @@ Welcome to the Theatre Repo!
 React | Redux | Redux Saga| Node | Express | Material UI | SQL |
 ![sample](public/images/SS2.png)
 ![sample](public/images/SS1.png)
-![sample](public/images/SS3.png)
-
